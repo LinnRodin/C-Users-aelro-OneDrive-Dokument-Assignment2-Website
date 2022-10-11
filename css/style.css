@@ -234,8 +234,6 @@ html, body {
 
 
 
-
-
 /*---------------------Section winter clearance and New arrivals-------------------------*/
 
 
@@ -369,9 +367,8 @@ html, body {
     grid-template-rows: 1fr, 1fr; 
 }
 
-
-.new-arrivals {
-    margin-top: 7rem;
+.new-arrivals-header {
+    margin-top: 10px;
 }
 
 .card {
@@ -382,6 +379,7 @@ html, body {
     border-radius: 0;
     border: none;
     overflow: hidden;
+   
 }
 
     .card .card-menu {
@@ -417,7 +415,7 @@ html, body {
 }
  
     .card .card-general .card-info {
-        position: absolute;
+        position: relative;
         left: 0;
         bottom: 40px;
         width: 100%;
@@ -439,6 +437,12 @@ html, body {
             font-weight: var(--font-weight-semibold);
             font-size: 16px;
         }
+
+        
+        .card .card-general .text-theme {
+            color: var(--color-product-instock);
+        }
+
 
     /* Prices */
     .card .card-general .card-price {
@@ -479,3 +483,78 @@ html, body {
     .card:hover .card-background {
         height: 100%;
     }
+
+
+/* --------------Showcase pamelas reif and lets be concious----------------------*/
+
+
+/* Img-left*/
+
+.img-left {   
+    position: relative;
+    width: 633px;
+    height: 314px;
+    background-image: url(/images/pamela_reif.svg);
+}
+
+    .img-left h1 {
+        position: absolute;
+        left: 57%;
+        top: 30%;
+        font-family: var(--font-poppins);
+        font-weight: var(--font-weight-bold);
+        font-size: 35px;
+        color: var(--color-white);
+    }
+
+.img-left .general_button {
+    position: absolute;
+    left: 58%;
+    top: 67%;
+    width: 9rem;
+    height: 3rem;
+    background-color: var(--color-theme-dark);
+    transition: 0.3s ease-in-out;
+}
+    .img-left button:hover {
+        background-color: var(--color-white);
+        color: var(--color-theme);
+    }
+
+ 
+
+/* Img-right */
+
+.img-right {   
+    position: relative;
+    width: 633px;
+    height: 314px;
+    background-image: url(/images/lets-be-con.svg);
+}
+
+    .img-right h1 {
+        position: absolute;
+        left: 57%;
+        top: 30%;
+        font-family: var(--font-poppins);
+        font-weight: var(--font-weight-bold);
+        font-size: 35px;
+        color: var(--color-white);
+    }
+
+        .img-right .general_button {
+            position: absolute;
+            left: 58%;
+            top: 67%;
+            width: 9rem;
+            height: 3rem;
+            background-color: var(--color-theme-dark);
+            transition: 0.3s ease-in-out;
+        }
+                .img-left button:hover {
+                    background-color: var(--color-white);
+                    color: var(--color-theme);
+                }
+
+            
+                        
