@@ -367,9 +367,6 @@ html, body {
     grid-template-rows: 1fr, 1fr; 
 }
 
-.new-arrivals-header {
-    margin-top: 10px;
-}
 
 .card {
     position: relative;
@@ -419,7 +416,7 @@ html, body {
         left: 0;
         bottom: 40px;
         width: 100%;
-        background-color: white;
+        background-color: var(--color-theme-light-dark);
         text-align: center;
         margin-bottom: 0;
     } 
@@ -459,14 +456,14 @@ html, body {
         }
         
         /* Button QUICK VIEW */
-        .card .card-general .btn-red {
+        .card .card-general .special_button {
             position: absolute;
             top: 101%;
             right: 0;
             width: 100%;
             transition: top 0.3s ease-in-out;
         }
-            .card:hover .card-general .btn-red {
+            .card:hover .card-general .special_button {
                 top: -135px;
             }
     
@@ -507,16 +504,17 @@ html, body {
         color: var(--color-white);
     }
 
-.img-left .general_button {
+.img-left .special_button {
     position: absolute;
     left: 58%;
     top: 67%;
-    width: 9rem;
+    width: 10rem;
     height: 3rem;
-    background-color: var(--color-theme-dark);
+    background-color: black;
+    color: white;
     transition: 0.3s ease-in-out;
 }
-    .img-left button:hover {
+    .img-left .special_button:hover {
         background-color: var(--color-white);
         color: var(--color-theme);
     }
@@ -526,6 +524,7 @@ html, body {
 /* Img-right */
 
 .img-right {   
+    flex: space-between;
     position: relative;
     width: 633px;
     height: 314px;
@@ -542,19 +541,20 @@ html, body {
         color: var(--color-white);
     }
 
-        .img-right .general_button {
+        .img-right .special_button {
             position: absolute;
             left: 58%;
             top: 67%;
-            width: 9rem;
+            width: 10rem;
             height: 3rem;
-            background-color: var(--color-theme-dark);
+            background-color: var(--color-white);
+            color: black;
             transition: 0.3s ease-in-out;
         }
-                .img-left button:hover {
-                    background-color: var(--color-white);
-                    color: var(--color-theme);
-                }
+            .img-right .special_button:hover {
+                background-color: black;
+                color: white;
+            }
 
             
                         
