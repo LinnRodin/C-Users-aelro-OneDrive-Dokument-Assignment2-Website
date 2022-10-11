@@ -64,31 +64,32 @@ html, body {
     background-color: var(--color-product-outofstock-2);
     height: 50px;
     line-height: 30px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: poppins;
+    border-radius: 0;
     border: none;
-    padding: 0 15px;
+    padding: 0.7rem 2rem 0.7rem 2rem;
 }
 
 .special_button::before,
 .special_button::after{
     position: absolute;
     content: '';
-    width: 30px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 
 .special_button::before{
-    left: 0;
-    top: 0;
-    border-left: 3px solid white;
-    border-top: 3px solid white;
+    left: 0.3rem;
+    top: 0.3rem;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
 }
 .special_button::after{
-    right: 0;
-    bottom: 0;
-    border-right: 3px solid white;
-    border-bottom: 3px solid white;
+    right: 0.3rem;
+    bottom: 0.3rem;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 
@@ -136,13 +137,18 @@ html, body {
                 margin: 0 0 0 0.3rem;
             }
 
+/*----Round-buttons-top-menu----*/
 
+ .social-media .btn {
+    border-radius: 50%;
+ }
 
 
 /* ---------------------------------------Showcase--------------------------------------------------*/
 
 .showcase .container_s {
     background-color: var(--color-grey-4);
+    max-width: 1922px;
    
 }
 
@@ -171,6 +177,65 @@ html, body {
 }
 
 
+
+/* .showcase {
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+    background-color: #E6E6E6;
+
+    align-items: center;
+    margin-bottom: 65px;
+
+}
+.showcase > .container-fluid {
+    max-width: 1922px;
+    display: flex;
+ 
+    justify-content: space-between;
+    align-items: center;
+}
+.sale-banner {
+    display: inline-block;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 50px;
+}
+.sale-banner h1 strong{
+    display: inline-flex;
+        font-size: 65px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+      padding-bottom: 10px;
+
+
+
+
+    }
+    .sale-banner p {
+        display: block;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+.sale-red-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+ 
+} */
+
+
+
+
+
 /*---------------------Section winter clearance and New arrivals-------------------------*/
 
 
@@ -182,16 +247,15 @@ html, body {
     .sale-banner {
         margin-top: 5rem;
         display: flex;
-        max-width: 1800px;
-        width: 100%;
+        max-width: 1680px;
         justify-content: space-between;
         flex-direction: row;
       
     }
 
     .sale-banner h1 strong {
-       font-size: 65px;
-       font-weight: 800px;
+       font-size: 40px;
+       font-weight: var(--font-weight-bold);
        font-family: 'poppins' , sans serif;
        color: black;
        position: absolute;
@@ -219,4 +283,199 @@ html, body {
         position: absolute;
         top: 150%;
         
+    }
+
+
+
+/*  Alternativ
+
+    .products-banner {
+    display: flex;
+
+    justify-content: center;
+    width:100%;
+
+}
+.products-flash {
+    display: flex;
+    justify-content: center;
+    width: 1680px;
+    align-items: center;
+
+
+}
+.products-flash > .item-1 {
+    display: block;
+    width: 1045px;
+    height: 560px;
+    display: flex;
+    background-image: url(/images/winter-clearance-bg.svg);
+
+    padding-top: 6rem;
+}
+.products-flash > .item-1 .prod-text {
+    width: 500px;
+    padding-left: 50px;
+}
+.products-flash > .item-1 .prod-text h2 strong {
+
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: 40px;
+
+}
+.products-flash > .item-1 .prod-text p {
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+    padding-top: 2rem;
+}
+
+
+.products-flash > .item-2 {
+    display: flex;
+    background-image: url(/images/new-arrivals-bg.svg);
+    width: 635px;
+    height: 560px;
+    justify-content: center;
+    padding-top: 12.8rem;
+
+} 
+.products-flash > .item-2 .prod-text {
+    width: 100%;
+    padding-left: 50px;
+
+}
+.products-flash > .item-2 .prod-text h2 strong {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: 40px;
+
+
+}
+.products-flash > .item-2 .prod-text .buttons {
+    padding-top: 1.5rem;
+}
+
+*/
+
+
+/* -------------------------------Featured-products---------------------------------*/
+
+
+.new-arrivals .grid {        
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr; 
+}
+
+
+.new-arrivals {
+    margin-top: 7rem;
+}
+
+.card {
+    position: relative;
+    height: 323px;
+    width: 255px;
+    background-color: var(--color-gray-2);
+    border-radius: 0;
+    border: none;
+    overflow: hidden;
+}
+
+    .card .card-menu {
+        position: absolute;
+        top: 101%;
+        right: 2%;
+        list-style: none;
+        margin: auto;
+        padding: 0.5rem;
+        background-color: var(--color-gray-2);
+        transition: top 0.3s ease-in-out;
+    }
+
+        .card:hover .card-menu {
+            top: 1px;
+        }
+
+        .card .card-menu li {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+           
+        }
+
+            .card-menu li .btn  {
+                border-radius: 50%;
+            }
+
+
+.card .card-general {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+ 
+    .card .card-general .card-info {
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 0;
+    } 
+
+        .card .card-general .category {
+            margin-bottom: 0.5rem;
+            left: 38%;
+            font-family: var(--font-poppins);
+            font-weight: var(--font-weight-regular);
+            font-size: 13px;
+        }
+
+        .card .card-general h1 {
+            font-family: var(--font-poppins);
+            font-weight: var(--font-weight-semibold);
+            font-size: 16px;
+        }
+
+    /* Prices */
+    .card .card-general .card-price {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+        .card .card-general .card-price .card-old-price {
+            text-decoration: line-through;
+        }
+        
+        /* Button QUICK VIEW */
+        .card .card-general .btn-red {
+            position: absolute;
+            top: 101%;
+            right: 0;
+            width: 100%;
+            transition: top 0.3s ease-in-out;
+        }
+            .card:hover .card-general .btn-red {
+                top: -135px;
+            }
+    
+.card .card-background {
+    position: absolute;
+    top: 101%;
+    width: 100%;
+    height: 70%;
+    background-color: var(--color-grey-1);
+    z-index: -1;
+
+}
+
+    .card:hover .card-background {
+        height: 100%;
     }
