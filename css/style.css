@@ -160,7 +160,7 @@ html, body {
 
     .showcase-content h1 {
         font-size: var(--font-size-60);
-        font-weight: var(--font-weight-bold);
+        font-family: poppins;
         text-align: center;
     }
 
@@ -178,7 +178,9 @@ html, body {
 
 
 
-/* .showcase {
+/* Alternativt
+
+.showcase {
     display: flex;
     justify-content: space-between;
    width: 100%;
@@ -237,13 +239,13 @@ html, body {
 /*---------------------Section winter clearance and New arrivals-------------------------*/
 
 
-    .sale-banner > .container {
+    .sale-banner .container {
        position: relative;
        
     }
 
     .sale-banner {
-        margin-top: 5rem;
+        margin-top: 7rem;
         display: flex;
         max-width: 1680px;
         justify-content: space-between;
@@ -252,12 +254,13 @@ html, body {
     }
 
     .sale-banner h1 strong {
-       font-size: 40px;
-       font-weight: var(--font-weight-bold);
-       font-family: 'poppins' , sans serif;
-       color: black;
-       position: absolute;
-       top: 120%;
+        position: absolute;
+        top: 120%;
+        font-size: 40px;
+        font-weight: var(--font-weight-bold);
+        font-family: 'poppins', sans serif;
+        color: black;
+      
      
     }
         .sale-banner p {
@@ -285,7 +288,7 @@ html, body {
 
 
 
-/*  Alternativ
+/*  Alternativt
 
     .products-banner {
     display: flex;
@@ -362,11 +365,10 @@ html, body {
 
 .new-arrivals .grid {        
     display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr, 1fr; 
+    column-gap: 0.3;
+    grid-template-columns: repeat(8, 1fr);
+    /* grid-template-rows: 1fr, 1fr;  */
 }
-
 
 .card {
     position: relative;
@@ -429,18 +431,25 @@ html, body {
         .card .card-general .category {
             margin-bottom: 0.5rem;
             left: 38%;
-            font-family: var(--font-poppins);
+            font-family: poppins;
             font-weight: var(--font-weight-regular);
             font-size: 13px;
         }
 
         .card .card-general h1 {
-            font-family: var(--font-poppins);
+            font-family: poppins;
             font-weight: var(--font-weight-semibold);
             font-size: 16px;
         }
 
-        
+        .featured-header h1 {
+            margin-top: 7rem;
+            text-align: center;
+            font-family: poppins;
+            font-weight: var(--font-weight-semibold);
+            font-size: 25px;
+        }
+
         .card .card-general .text-theme {
             color: var(--color-product-outofstock);
         }
@@ -502,37 +511,43 @@ html, body {
     background-image: url(/images/pamela_reif.svg);
 }
 
+    .showcase-content-2{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
     .img-left h1 {
         position: absolute;
-        left: 57%;
+        left: 58%;
         top: 30%;
-        font-family: var(--font-poppins);
+        font-family: poppins;
         font-weight: var(--font-weight-bold);
         font-size: 35px;
         color: var(--color-white);
     }
 
-.img-left .special_button {
-    position: absolute;
-    left: 58%;
-    top: 67%;
-    width: 10rem;
-    height: 3rem;
-    background-color: black;
-    color: white;
-    transition: 0.3s ease-in-out;
-}
-    .img-left .special_button:hover {
-        background-color: var(--color-white);
-        color: var(--color-theme);
+    .img-left .special_button {
+        position: absolute;
+        left: 41%;
+        top: 60%;
+        width: 10rem;
+        height: 3rem;
+        background-color: black;
+        color: white;
+        transition: 0.3s ease-in-out;
     }
+        .img-left .special_button:hover {
+            background-color: var(--color-white);
+            color: black;
+        }
 
  
 
 /* Img-right */
 
 .img-right {   
-    flex: space-between;
     position: relative;
     width: 633px;
     height: 314px;
@@ -541,9 +556,9 @@ html, body {
 
     .img-right h1 {
         position: absolute;
-        left: 57%;
+        left: 10%;
         top: 30%;
-        font-family: var(--font-poppins);
+        font-family: poppins;
         font-weight: var(--font-weight-bold);
         font-size: 35px;
         color: var(--color-white);
@@ -551,8 +566,8 @@ html, body {
 
         .img-right .special_button {
             position: absolute;
-            left: 58%;
-            top: 67%;
+            right: 65%;
+            top: 60%;
             width: 10rem;
             height: 3rem;
             background-color: var(--color-white);
