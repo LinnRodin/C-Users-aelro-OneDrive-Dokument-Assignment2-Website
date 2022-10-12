@@ -28,6 +28,8 @@
 --color-product-outofstock: #FE6C6C ; 
 --color-product-outofstock-2: #FF7373;
 
+--max-width: 1680px;
+
 --font-play: Play, sans-serif;
 --font-roboto: Roboto, sans-serif;
 --font-weight-regular: 400;
@@ -39,7 +41,7 @@
 --font-size-24: 2rem;
 --font-size-36: 3rem;
 --font-size-60: 5rem;
---font-size-65: 5rem;
+--font-size-65: 6rem;
 
 --border-radius-small: 8px;
 --border-radius-medium: 25px;
@@ -50,11 +52,11 @@
 html, body { 
     font-size: 16px;
     line-height: 1.5;
-    font-family: var(--font-roboto);
-    font-weight: var(--font-weight-regular);
-    color: var(--color-theme-dark);
+    font-family: 'poppins' , sans-serif;
+    font-weight: 400px;
+    
+    
 }
-
 
 /* ----------------------------------General-button-------------------------------- */
 
@@ -95,12 +97,12 @@ html, body {
 
 /*--------------------------------------Top-menu------------------------------------ */
 .top-menu {
-    background-color: var(--color-grey-4);
-    color: var(--color-dark-3);
+    background-color: var(--color-grey-2);
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+   
 }
 
     .top-menu  .container {
@@ -108,51 +110,85 @@ html, body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
+        
     }
 
-
+    .brand-logo{
+        font-family: 'poppins';
+        font-size: 35px;
+        font-weight: var(--font-weight-bold);
+    }
     
-/*---------------Top-menu-social-media-and-links------------------- */
+/*------Top-menu-social-media-and-links------- */
    
   
     .top-menu .menu-links a {
-        color: var(--color-dark-3);
+        color: black;
         text-decoration: none;
         margin: 0 1.2rem;
+        font-weight: 500;
     }       
         .top-menu .menu-links a:hover {
             color: var(--color-product-outofstock-2);
+            text-decoration: underline;
+            font-weight: 500;
         }
 
     .top-menu .menu-links .social-media {
         margin-left: 1rem;
-        font-size: var(--font-size-14);
+       
     }
 
         .top-menu .menu-links .social-media a {
-            margin: 0 0.3rem;
+             margin: 0 0.3rem; 
+           
         }
+            
             .top-menu .menu-links .social-media a:last-child {
-                margin: 0 0 0 0.3rem;
+                 margin: 0 0 0 0.3rem;
+                
             }
 
-/*----Round-buttons-top-menu----*/
+            .top-menu .social-media i {
+                color: black;
+                text-decoration: none;
+            
+            }
 
- .social-media .btn {
-    border-radius: 50%;
- }
+                .top-menu .social-media i:hover {
+                    color: var(--color-product-outofstock-2);
+                    text-decoration: none;
+            
+                }
+
+            /*----Round-buttons-top-menu----*/
+
+            .social-media .btn {
+                border-radius: 50%;
+                
+            }
+
+
+/* Responsiveness */
+
+@media (min-width: 1600px){
+
+    .container{
+        max-width: var(--max-width);
+    }
+}
+            
 
 
 /* ---------------------------------------Showcase--------------------------------------------------*/
 
-.showcase .container_s {
-    background-color: var(--color-grey-4);
-    max-width: 1922px;
+.showcase .container_ {
+    background-color: var(--color-grey-2);
+    
    
 }
 
-.showcase .container_s .showcase-content {
+.showcase .container_ .showcase-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,7 +443,7 @@ html, body {
                 
             }
 
-                .card-menu li .btn:hover  {
+                .card-menu li .btn .btn:hover  {
                     color: black;
                 }
 
