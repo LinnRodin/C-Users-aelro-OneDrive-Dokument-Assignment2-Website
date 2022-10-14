@@ -164,7 +164,7 @@ html, body {
             }
 
                 .top-menu .social-media i:hover {
-                    color: var(--color-product-outofstock-2);
+                    color: var(--color-theme);
                     text-decoration: none;
                     
             
@@ -252,7 +252,7 @@ html, body {
 /*---------------------Section winter clearance and New arrivals-------------------------*/
 
 
-    .sale-banner .container {
+    /* .sale-banner .container {
        position: relative;
        
     }
@@ -297,7 +297,7 @@ html, body {
         position: absolute;
         top: 150%;
         
-    }
+    } */
 
 
 
@@ -521,7 +521,7 @@ html, body {
         background-color: var(--color-grey-3);
    } 
 
-/* --------------Showcase pamelas reif and lets be concious----------------------*/
+/* ------------------Showcase pamelas reif and lets be concious----------------------*/
 
 
 /* Img-left*/
@@ -639,7 +639,8 @@ html, body {
         }
 
         .img_left_box .img_left_button .btn {
-            color: var(--color-white-1);
+            background-color: black;
+            color: white;
     
         }
 
@@ -687,7 +688,8 @@ html, body {
         }
 
         .img_right_box .img_right_button .btn {
-            color: var(--color-white-1);
+            background-color: black;
+            color: white;
     
         }
 
@@ -698,4 +700,19 @@ html, body {
 } 
 
 
-/*  */
+/*-----------------------------Info-menu----------------------------------*/
+
+.bottom-menu .info-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+    .bottom-menu .info-menu .btn{
+        border-radius: 50%;
+        background-color: var(--color-grey-4);
+        height: 50px;
+        width: 50px;
+    }
+
