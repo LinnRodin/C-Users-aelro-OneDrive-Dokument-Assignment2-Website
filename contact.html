@@ -62,18 +62,18 @@
             <section class="contact-form">
                 <div class="container">
                     <h2>Come in contact with us</h2>
-                        <form novalidate>
+                        <form onsubmit="submitForm(event)" novalidate>
                             <div>
                                 <input id="name" onkeyup="validate(event)" type="text" placeholder="Your Name">
                                 <div id="nameErrorMessage" class="errorMessage"></div>
                             </div>
                             <div>
-                                <input id="email" type="email" placeholder="Your Mail">
+                                <input id="email" onkeyup="validate(event)" type="email" placeholder="Your Mail">
                                 <div id="emailErrorMessage" class="errorMessage"></div>
                             </div>
                             
                             <div class="textarea">
-                                <textarea id="comment" placeholder="Comments"></textarea>
+                                <textarea id="comment" onkeyup="validate(event)" placeholder="Comments"></textarea>
                                 <div id="commentErrorMessage" class="errorMessage"></div>
                             </div>
                     
@@ -102,5 +102,12 @@
 
 
             <div style="height: 1000px;"></div>
+
+         <!-- JavaScript Bundle with Popper -->
+        
+    
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    
+   
     </body>    
 </html>
