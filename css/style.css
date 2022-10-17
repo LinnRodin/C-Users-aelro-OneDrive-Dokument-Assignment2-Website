@@ -688,18 +688,36 @@ html, body {
     }
 
     .contact-form form input{
+        width: 100%;
         padding: 18px 20px;
         border: 1px solid #70707066;
     }
 
-    .contact-form form textarea{
+
+    .contact-form .textarea{
         grid-column: 1 / -1;
+    }
+
+    .contact-form form textarea{
+        width: 100%;
         padding: 18px 20px;
         border: 1px solid #70707066;;
         height: 140px;
         resize: none;
     }
 
+    .contact-form form .error { /* Vad sker här då Hans tog bort klassen? */
+        margin-top: 5px;
+        color: var(--color-theme);
+        border: 1px solid var(--color-theme);
+        
+    }
+
+    .contact-form form .errorMessage {
+        margin-top: 5px;
+        color: var(--color-theme);
+        font-size: 0.8em;
+    }
        
         .contact-form {
             margin-bottom: 60px;
@@ -762,20 +780,23 @@ footer {
     background-color: var(--color-grey-3);
     border-top: 1px solid var(--color-grey-9);
     border-bottom: 1px solid var(--color-grey-9);
+    padding: 25px;
 
 }
 
-
-footer ._social-media {
-
+footer ._socialmedia {
+    margin-bottom: 25px;
 }
 
-    footer ._social-media i {
+    footer ._socialmedia a {
+        font-size: 20px;
         color: black;
         text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-        footer ._social-media i:hover {
+        footer ._socialmedia a:hover {
             color: var(--color-theme);
             text-decoration: none;
         }
